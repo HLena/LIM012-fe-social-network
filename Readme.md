@@ -67,8 +67,8 @@ Nuestros usuarios de Eco-chat en su primera versión, realizar las siguientes ac
 ### Testing
 
 * [x] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
-* [ ] [Testeo asíncrono](https://jestjs.io/docs/es-ES/asynchronous)
-* [ ] [Mocking](https://jestjs.io/docs/es-ES/manual-mocks)
+* [x] [Testeo asíncrono](https://jestjs.io/docs/es-ES/asynchronous)
+* [x] [Mocking](https://jestjs.io/docs/es-ES/manual-mocks)
 
 ### Colaboración en Github
 
