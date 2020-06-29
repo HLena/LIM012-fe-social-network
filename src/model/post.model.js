@@ -15,9 +15,9 @@ export const createPostBD = postObj => db.collection('posts').add(postObj);
 
 export const deletePostBD = id => db.collection('posts').doc(id).delete();
 
-export const getPostBD = id => db.collection('posts').doc(id).get();
-
 export const updatePostBD = (id, data) => db.collection('posts').doc(id).update(data);
+
+export const getPostBD = id => db.collection('posts').doc(id).get();
 
 export const updateLikeBD = (postId, likes) => db.collection('posts').doc(postId).update({ likes });
 

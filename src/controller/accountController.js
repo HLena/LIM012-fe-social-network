@@ -26,7 +26,7 @@ export default (page) => {
   getUserBD(user.uid)
     .then((doc) => {
       const coverPhoto = currentView.querySelector('.user-photo-cover');
-      // console.log(doc.id, doc.data().coverPhoto);
+      console.log(doc.id, doc.data().coverPhoto);
       coverPhoto.src = doc.data().coverPhoto;
     });
 

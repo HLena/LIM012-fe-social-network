@@ -46,7 +46,7 @@ const eventGoogle = (event) => {
     .then((res) => {
       getUserBD(res.user.uid)
         .then((user) => {
-          if (!user) {
+          if (!user.data()) {
             console.log('logueandose por primera vez');
             const userObj = {
               coverPhoto: coverDefault,
