@@ -8,8 +8,6 @@ import {
   signOut,
 } from '../src/model/user.model.js';
 
-import { signInFormValidation } from '../src/controller/utils.js';
-
 describe('Function signInUser()', () => {
   it('Should SignIn', () => signInUser('lala06@gmail.com', '123456')
     .then((user) => {
