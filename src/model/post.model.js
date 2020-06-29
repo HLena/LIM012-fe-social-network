@@ -23,7 +23,8 @@ export const updateLikeBD = (postId, likes) => db.collection('posts').doc(postId
 
 // COMMENTS
 
-export const addCommentBD = commentObj => db.collection('comments').add(commentObj);
+export const addCommentBD = commentObj => db.collection('comments').add(commentObj)
+  .then((data) => { console.log(data); });
 
 export const editCommentBD = (id, data) => db.collection('comments').doc(id).update(data);
 

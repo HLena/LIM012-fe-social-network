@@ -21,7 +21,7 @@ export default (page) => {
     window.location.hash = '#/login';
     return views.signInView();
   }
-  const currentView = views.accountView(user, page);
+  const currentView = views.accountView(user, page); // curentView == divElemt
 
   getUserBD(user.uid)
     .then((doc) => {
@@ -141,6 +141,7 @@ export default (page) => {
     console.log('se actualizara todas las fotos');
     const allPhotos = currentView.querySelectorAll('.my-photo');
     allPhotos.forEach((photo) => {
+      console.log(photo);
       photo.textContent = newPhoto;
     });
   };
@@ -192,6 +193,7 @@ export default (page) => {
 
   uploadImgProfile.addEventListener('click', (event) => {
     event.target.addEventListener('change', (e) => {
+      // console.log(e.target.files[0]);
       uploadImage(e.target.files[0])
         .then((url) => {
           if (event.target.id === 'cover') {
